@@ -1,0 +1,47 @@
+home_type,price,bedrooms,bathrooms,house_size,description,neighborhood,neighborhood_description,id
+Apartment,200000,2,2.0,1100,Modern apartment with stunning city views,Downtown,Close to restaurants and shopping,0
+Condo,350000,3,2.5,1800,Luxurious waterfront condo with private balcony,Waterfront District,Scenic views and walking trails,1
+Townhouse,280000,4,3.0,2000,Spacious townhouse with attached garage,Suburban Estates,Family-friendly community,2
+Single Family Home,400000,5,4.0,3000,Charming colonial style home with large backyard,Historic District,Rich in history and culture,3
+Ranch,320000,3,2.5,2400,Sprawling ranch house with mountain views,Mountain Valley,Tranquil setting for nature lovers,4
+Duplex,500000,6,4.0,3500,Investment opportunity with two income-generating units,Commercial District,Great location for rental properties,5
+Cottage,250000,2,1.0,1200,Cozy cottage with private garden,Seaside Village,Beachside community with charming shops,6
+Loft,300000,1,1.5,1000,Industrial-style loft with exposed brick walls,Art District,Vibrant arts and culture scene,7
+Mansion,1000000,8,6.0,6000,Impressive mansion with sprawling grounds,Exclusive Gated Community,Luxury living at its finest,8
+Bungalow,180000,2,1.0,900,Quaint bungalow with original architectural details,Historic District,Preserved historic homes and landmarks,9
+Villa,700000,4,3.5,4000,Mediterranean-style villa with panoramic ocean views,Cliffside Estates,Cliffside views overlooking the sea,10
+Penthouse,800000,3,3.0,2500,Luxury penthouse with rooftop terrace and skyline views,City Center,Convenient access to urban amenities,11
+Farmhouse,600000,5,4.0,3500,Quintessential farmhouse with barn and acres of land,Rural Countryside,Tranquil country living,12
+Log Cabin,350000,3,2.5,2000,Cozy log cabin retreat nestled in the woods,Forest Glen,Secluded forest setting for peace and quiet,13
+Studio,150000,0,1.0,700,Chic studio apartment in trendy urban neighborhood,Hipster Haven,Trendy cafes and boutiques,14
+Mansion,1200000,10,8.0,8000,Elegant mansion with grand ballroom and pool,Historic Landmark District,Distinguished homes and historical sites,15
+Cabin,250000,2,1.5,1200,Charming cabin in the mountains with river views,Mountain Retreat,Escape into nature with hiking trails,16
+Ranch,400000,4,3.0,2200,Rustic ranch house with horse barn and stables,Equestrian Community,Horse-friendly community with riding trails,17
+Townhouse,300000,3,2.5,1600,Contemporary townhouse with rooftop deck,Urban Hub,Exciting city living with dining and entertainment,18
+Modern Home,450000,4,3.5,2800,Sleek modern home with smart technology features,Tech District,Innovative tech companies and startups,19
+Beachfront Villa,900000,5,4.0,4000,Luxurious beachfront villa with private dock,Tropical Paradise,White sandy beaches and crystal-clear waters,20
+Craftsman Bungalow,280000,3,2.0,1800,Classic craftsman bungalow with original woodwork,Tree-lined Streets,Shaded streets with mature trees,21
+Modern Loft,350000,2,2.0,1500,Chic modern loft with industrial accents,Arts District,Creative community with art galleries,22
+Mountain Chalet,600000,4,3.5,2500,Ski-in/ski-out mountain chalet with hot tub,Alpine Village,Winter wonderland for outdoor enthusiasts,23
+Victorian Mansion,800000,6,4.0,4000,Gorgeous Victorian mansion with wraparound porch,Historic District,Architectural charm and elegance,24
+Tudor Style Home,450000,4,3.0,2200,Stately Tudor style home with stained glass windows,English Countryside,Quaint villages and rolling hills,25
+Beach House,700000,4,3.5,3000,Spacious beach house with panoramic ocean views,Coastal Retreat,Relaxing seaside living with beach access,26
+Spanish Villa,550000,3,2.5,2000,Mediterranean-inspired Spanish villa with courtyard,Sunshine Coast,Sunny coastal living with palm trees,27
+Lakefront Cabin,300000,2,1.5,1200,Cozy lakefront cabin with private dock,Lakefront Community,Waterfront living for boating and fishing,28
+Green Home,400000,3,2.5,1800,Energy-efficient green home with solar panels,Ecovillage,Sustainable community with green spaces,29
+Luxury Penthouse,1200000,4,4.0,3000,Ultimate luxury penthouse with private elevator,Skyline Views,Spectacular views of the city skyline,30
+Colonial Revival Home,500000,4,3.0,2400,Historic colonial revival home with classic columns,Heritage District,Culturally significant architecture and gardens,31
+Beachfront Cottage,350000,2,1.5,1500,Quaint beachfront cottage with panoramic ocean views,Seaside Retreat,Tranquil beach community with sand dunes,32
+Craftsman Style Home,400000,3,2.5,2000,Craftsman style home with intricate woodwork,Historic Craftsman District,Craftsman architecture and artisan heritage,33
+Modern Farmhouse,600000,4,3.5,2800,Contemporary modern farmhouse with wraparound porch,Country Living,Tranquil rural setting with open fields,34
+Boutique Condo,300000,2,1.5,1200,Chic boutique condo with designer finishes,Fashion District,Trendy shopping and upscale dining,35
+Log Cabin Retreat,250000,2,1.0,1000,Secluded log cabin retreat in the woods,Woodland Sanctuary,Peaceful retreat surrounded by nature,36
+Ski Chalet,400000,3,2.5,1800,Cozy ski chalet with mountain views,Ski Resort Town,Winter sports and apres-ski activities,37
+Suburban Estate,700000,5,4.0,3500,Expansive suburban estate with swimming pool,Leafy Suburb,Quiet streets and good schools,38
+Historic Manor,900000,6,5.0,4500,Grand historic manor with formal gardens,Estate District,Stately homes and manicured lawns,39
+Lakefront Villa,800000,4,3.5,3000,Majestic lakefront villa with boathouse,Lakeside Enclave,Tranquil lake living with fishing and boating,40
+Mountain Retreat,350000,3,2.5,2000,Secluded mountain retreat with hot springs,Winding Mountain Trails,Serene natural surroundings for outdoor adventures,41
+Coastal Cottage,250000,2,1.5,1200,Quaint coastal cottage with sea views,Seaside Hamlet,Charming seaside community with fishing harbor,42
+Luxury Beach House,1000000,6,4.5,4000,Exquisite luxury beach house with infinity pool,Exclusive Beachfront,Private beach access and VIP services,43
+Historic Townhouse,450000,3,2.5,1800,Restored historic townhouse with original fireplaces,Cobblestone Streets,Quaint streets with historic charm,44
+Waterfront Estate,1500000,8,6.0,6000,Magnificent waterfront estate with private beach,Exclusive Waterfront Community,Luxury living on the water with yacht club,45
