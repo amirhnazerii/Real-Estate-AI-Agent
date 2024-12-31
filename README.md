@@ -49,7 +49,44 @@ You can install the dependencies by running:
 
 1. **Clone the repository**:
    ```
-   cd real-estate-agenrt
-   git clone https://github.com/your-username/real-estate-agent.git
-   
+   cd real-estate-agent
+   git clone https://github.com/amirhnazerii/Real-Estate-AI-Agent.git
+   ```
 
+## Install dependencies: 
+
+Ensure that the required libraries are installed:
+```
+pip install -r requirements.txt
+```
+
+## Set Up Your OpenAI API Key:
+Replace sk-xxxxxxx in the script with your OpenAI API key. You can sign up for an OpenAI account here.
+
+## Run the Jupyter Notebook:
+If you'd like to explore dataset generation, run the generate_dataset.ipynb notebook.
+```
+jupyter notebook generate_dataset.ipynb
+```
+
+## Start the Real Estate Assistant App:
+Once the environment is set up, you can run the main Gradio interface by running the last cell of `app.ipynb`.
+This will launch a web-based user interface where you can interact with the assistant.
+
+## Usage:
+Once the app is launched, you will be able to:
+
+* Ask questions about real estate listings in natural language (e.g., "Show me houses with 3 bedrooms and a pool").
+* View a tailored description of the most relevant listing based on your preferences.
+* See an image of the property if available.
+
+## Example interaction:
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+
+## Notes:
+- The dataset (`RealEstateListingsDatasetv2.csv` and `RealEstateListingsDatasetv3.json`) used in the project is a synthetic dataset generated via LLM. You can modify or replace it with your own dataset.
+- This project can be further expanded by incorporating more advanced features, such as dynamic filtering, recommendations based on user profile history, or integrating more sophisticated user interfaces.
