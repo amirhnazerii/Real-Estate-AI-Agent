@@ -1,92 +1,146 @@
-# Personalized Real Estate Agent
+# HomeMatch AI: Your Intelligent Real Estate Assistant 🏠
 
-This project implements a personalized real estate assistant using advanced natural language processing (NLP) techniques, LangChain, GPT-3.5 language model. The assistant uses a semantic search system to recommend real estate listings that best match a user's preferences. It then generates a tailored marketing description for the most relevant listing and provides an image of the property.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Key Features:
+HomeMatch AI is a cutting-edge real estate recommendation system that leverages advanced Natural Language Processing (NLP) and the power of GPT-3.5 to create personalized property matches. By combining semantic search capabilities with intelligent property analysis, HomeMatch AI transforms the way people find their dream homes.
 
-1. **Synthetic Data Generation**: 
-   - **Generating Real Estate Listings with an LLM**: A synthetic dataset of real estate listings is created using an LLM (Large Language Model). This dataset is utilized for various tasks, such as training and testing.
-   - **Generate Dataset Script**: The dataset generation script is available in `generate_dataset.ipynb`.
+## 🌟 Key Features
 
-2. **Semantic Search**: 
-   - **Creating a Vector Database**: The project generates embeddings of the real estate listings and stores them in a vector database using Chroma.
-   - **Semantic Search of Listings**: Using buyer preferences (input questions), the system semantically searches through the dataset to find the most relevant listings.
-   
-3. **Personalized Listing Descriptions**: 
-   - The real estate assistant generates unique and appealing descriptions for the most relevant listings based on the buyer's query and preferences.
+### Intelligent Property Matching
+- **Natural Language Understanding**: Simply describe your dream home in plain English
+- **Semantic Search Engine**: Powered by ChromaDB for intelligent property matching
+- **Personalized Recommendations**: Tailored suggestions based on your unique preferences
+- **Dynamic Property Descriptions**: AI-generated, engaging property descriptions that highlight relevant features
 
-4. **User Interface**: 
-   - The assistant is integrated with a **Gradio** interface for an easy-to-use, interactive experience where users can input their preferences and view the most relevant listings and their descriptions.
+### Advanced Technology Stack
+- **LangChain Integration**: Seamless combination of language models and document retrieval
+- **Vector Database**: ChromaDB for efficient similarity search and property matching
+- **GPT-3.5 Language Model**: State-of-the-art natural language processing
+- **Interactive UI**: Built with Gradio for a user-friendly experience
 
-## Folder Structure:
+### Data Management
+- **Synthetic Dataset Generation**: Custom-built dataset using LLM technology
+- **Structured Property Information**: Comprehensive property details including:
+  - Property specifications (size, bedrooms, bathrooms)
+  - Neighborhood information
+  - Price points
+  - Property descriptions
+  - Image URLs
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.8 or higher
+- OpenAI API key
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/amirhnazerii/Real-Estate-AI-Agent.git
+cd Real-Estate-AI-Agent
 ```
-/RealEstateAgent
-│
-├── /dataset           
-├── /app.ipynb    
-├── /generate_dataset.ipynb
-├── requirements.txt     
-└── README.md            
-```
 
-
-## Requirements:
-To run this project, you will need the following Python packages:
-
-- **Gradio**: For building the interactive user interface.
-- **Langchain**: For chaining together language models and document retrieval tasks.
-- **OpenAI**: For using OpenAI's GPT models.
-- **Chroma**: For creating a vector database for semantic search.
-- **Pydantic**: For structured output parsing.
-- **Requests**: For fetching images from URLs.
-- **Pillow**: For image manipulation.
-
-
-The `requirements.txt` file includes all the necessary packages.
-
-## How to Run:
-You can install the dependencies by running:
-
-1. **Clone the repository**:
-   ```
-   cd real-estate-agent
-   git clone https://github.com/amirhnazerii/Real-Estate-AI-Agent.git
-   ```
-
-## Install dependencies: 
-
-Ensure that the required libraries are installed:
-```
+2. Install dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-## Set Up Your OpenAI API Key:
-Replace sk-xxxxxxx in the script with your OpenAI API key. You can sign up for an OpenAI account here.
-
-## Run the Jupyter Notebook:
-If you'd like to explore dataset generation, run the generate_dataset.ipynb notebook.
+3. Configure your OpenAI API key:
+```python
+export OPENAI_API_KEY='your-api-key-here'
+# or
+os.environ['OPENAI_API_KEY'] = 'your-api-key-here'
 ```
+
+### Running the Application
+
+1. Generate the dataset (optional):
+```bash
 jupyter notebook generate_dataset.ipynb
 ```
 
-## Start the Real Estate Assistant App:
-Once the environment is set up, you can run the main Gradio interface by running the last cell of `app.ipynb`.
-This will launch a web-based user interface where you can interact with the assistant.
+2. Launch the application:
+```bash
+jupyter notebook app.ipynb
+```
 
-## Usage:
-Once the app is launched, you will be able to:
+## 📦 Project Structure
+```
+Real-Estate-AI-Agent/
+├── dataset/
+│   ├── RealEstateListingsDatasetv2.csv
+│   └── RealEstateListingsDatasetv3.json
+├── app.ipynb                 # Main application notebook
+├── generate_dataset.ipynb    # Dataset generation script
+├── requirements.txt          # Project dependencies
+└── README.md                # Project documentation
+```
 
-* Ask questions about real estate listings in natural language (e.g., "Show me houses with 3 bedrooms and a pool").
-* View a tailored description of the most relevant listing based on your preferences.
-* See an image of the property if available.
+## 💻 Technical Details
 
-## Example interaction:
+### Dependencies
+```
+langchain==0.0.305
+openai==0.28.1
+pydantic>=1.10.12
+pytest>=7.4.0
+sentence-transformers>=2.2.0
+transformers>=4.31.0
+chromadb==0.4.12
+jupyter==1.0.0
+tiktoken==0.4.0
+```
+
+### Data Model
+The system uses Pydantic models for structured data handling:
+```python
+class RealEstateListing(BaseModel):
+    home_type: str
+    price: int
+    bedrooms: int
+    bathrooms: float
+    house_size: int
+    description: str
+    neighborhood: str
+    neighborhood_description: Optional[str]
+```
+
+## 🎯 Example Usage
+
+1. Start the application and access the Gradio interface
+2. Enter your preferences in natural language:
+   - "I'm looking for a 3-bedroom house with a pool near downtown"
+   - "Show me modern apartments with city views under $500,000"
+3. View personalized recommendations with property descriptions and images
+
+
+
+## App interaction:
 
 ![alt text](image.png)
 
 ![alt text](image-1.png)
 
 
-## Notes:
-- The dataset (`RealEstateListingsDatasetv2.csv` and `RealEstateListingsDatasetv3.json`) used in the project is a synthetic dataset generated via LLM. You can modify or replace it with your own dataset.
-- This project can be further expanded by incorporating more advanced features, such as dynamic filtering, recommendations based on user profile history, or integrating more sophisticated user interfaces.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- OpenAI for providing the GPT-3.5 API
+- LangChain for the framework
+- Gradio team for the UI components
+
+## 📧 Contact
+
+Amir H Nazeri - [@amirhnazerii](https://github.com/amirhnazerii)
+
+Project Link: [https://github.com/amirhnazerii/Real-Estate-AI-Agent](https://github.com/amirhnazerii/Real-Estate-AI-Agent)
