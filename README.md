@@ -115,6 +115,16 @@ class RealEstateListing(BaseModel):
    - "Show me modern apartments with city views under $500,000"
 3. View personalized recommendations with property descriptions and images
 
+
+
+## App interaction:
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
