@@ -105,6 +105,9 @@ class RealEstateListing(BaseModel):
     description: str
     neighborhood: str
     neighborhood_description: Optional[str]
+
+class RealEstateListings(BaseModel):
+    properties: List[RealEstateListing]
 ```
 
 ## 🎯 Example Usage
